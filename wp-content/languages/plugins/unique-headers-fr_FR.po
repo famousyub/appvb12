@@ -1,0 +1,107 @@
+# Translation of Plugins - Unique Headers - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Unique Headers - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-11-06 13:24:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Unique Headers - Stable (latest release)\n"
+
+#: inc/class-dotorg-plugin-review.php:190
+msgid "No thanks."
+msgstr "Non merci."
+
+#: inc/class-dotorg-plugin-review.php:189
+msgid "Leave A Review"
+msgstr "Laisser un avis"
+
+#: inc/class-dotorg-plugin-review.php:141
+msgid "a second"
+msgstr "une seconde"
+
+#. translators: %s: Number of seconds.
+#: inc/class-dotorg-plugin-review.php:139
+msgid "%s seconds"
+msgstr "%s secondes"
+
+#: inc/class-dotorg-plugin-review.php:132
+msgid "a minute"
+msgstr "une minute"
+
+#. translators: %s: Number of minutes.
+#: inc/class-dotorg-plugin-review.php:130
+msgid "%s minutes"
+msgstr "%s minutes"
+
+#: inc/class-dotorg-plugin-review.php:123
+msgid "an hour"
+msgstr "une heure"
+
+#. translators: %s: Number of hours.
+#: inc/class-dotorg-plugin-review.php:121
+msgid "%s hours"
+msgstr "%s heures"
+
+#: inc/class-dotorg-plugin-review.php:114
+msgid "a day"
+msgstr "un jour"
+
+#. translators: %s: Number of days.
+#: inc/class-dotorg-plugin-review.php:112
+msgid "%s days"
+msgstr "%s jours"
+
+#: inc/class-dotorg-plugin-review.php:105
+msgid "a week"
+msgstr "une semaine"
+
+#. translators: %s: Number of weeks.
+#: inc/class-dotorg-plugin-review.php:103
+msgid "%s weeks"
+msgstr "%s semaines"
+
+#: inc/class-dotorg-plugin-review.php:96
+msgid "a year"
+msgstr "une année"
+
+#. translators: %s: Number of years.
+#: inc/class-dotorg-plugin-review.php:94
+msgid "%s years"
+msgstr "%s années"
+
+#. Author URI of the plugin
+msgid "https://geek.hellyer.kiwi/"
+msgstr "https://geek.hellyer.kiwi/"
+
+#. Author of the plugin
+msgid "Ryan Hellyer"
+msgstr "Ryan Hellyer"
+
+#. Plugin URI of the plugin
+msgid "https://geek.hellyer.kiwi/plugins/unique-headers/"
+msgstr "https://geek.hellyer.kiwi/plugins/unique-headers/"
+
+#. Plugin Name of the plugin
+#. Description of the plugin
+msgid "Unique Headers"
+msgstr "Unique Headers"
+
+#: inc/class-unique-headers-instantiate.php:87
+msgid "Upload header image"
+msgstr "Téléverser une image d’en-tête"
+
+#: inc/class-unique-headers-instantiate.php:69
+msgid "Remove Custom Header Image"
+msgstr "Supprimer l’image d’en-tête personnalisée"
+
+#: inc/class-unique-headers-instantiate.php:68
+msgid "Set Custom Header Image"
+msgstr "Définir l’image d’en-tête personnalisée."
+
+#: inc/class-unique-headers-instantiate.php:67
+msgid "Custom header"
+msgstr "En-tête personnalisée"

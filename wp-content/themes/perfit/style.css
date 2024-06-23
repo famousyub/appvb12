@@ -1,0 +1,473 @@
+/*
+Theme Name: PerFit
+Theme URI: http://smthemes.com/perfit/
+Author: The Smart Magazine Themes
+Author URI: http://smthemes.com/
+Description: Template by SMThemes.com
+Version: 3.0
+License: Creative Commons 3.0
+Theme date: 11/12/2012
+License URI: license.txt
+Tags: black, green, dark, fixed-width, featured-images, custom-menu, translation-ready, threaded-comments, theme-options
+*/
+
+@import url(styles/font.css);
+/* ========================================= GENERAL. ========================================= */
+body {
+	color:#fff;
+	font-size:13px;
+	font-family: 'Arial', sans-serif;
+	position:relative;
+	background:#1f1f1f;
+}
+/* .......................................................................... UI .......................................................................... */
+a { 
+	color:#ec205f;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+.submit, .button, input[type="submit"] { 
+	background: #ed145b;
+	color:#fff;
+	font-family:'ferrara-osfregular';
+	text-transform:uppercase;
+	font-size:18px;
+	padding:10px 15px;
+	border:none !important;
+}
+.submit:hover, .button:hover, input[type="submit"]:hover { 
+	background:#fff;
+	color:#000;
+	text-decoration:none;
+}
+input[type="text"], 
+textarea, 
+input[type="email"], 
+input[type="password"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="search"], 
+input[type="date"],
+select { 
+	border-color:#e0e0e0;
+	color:#a3a3a3;
+}
+input[type="text"]:focus, 
+textarea:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="date"]:focus,
+select:focus { 
+	border-color:#c0c0c0;
+}
+.accent {
+	color:#28262b;
+}
+#comments .accent {}
+.descent {
+	color:#ec205f;
+}
+
+/* ....................... Page Navigation .................... */
+nav.pagination.dynamic a ,
+nav.pagination span.page-numbers,
+nav.pagination a.page-numbers {
+	background: #fff;
+	color:#000;
+}
+nav.pagination span.page-numbers.dots {}
+nav.pagination a.page-numbers:hover,
+nav.pagination.dynamic a:hover,
+nav.pagination span.page-numbers.current {
+	background: #e81e5c;
+	color:#fff;
+}
+
+/* ========================================= Theme Header. ========================================= */
+.site-header .boxed-container {
+	background:#000;
+}
+#logo {
+	float:left;
+	display:flex;
+	align-items:center;
+	height:52px;
+}
+#logo img {
+	max-height:100%;
+}
+.site_ttl {
+	float:left;
+	margin:0;
+	padding:0;
+	line-height:normal;
+	color: #fff;
+    text-transform: none;
+}
+.headersearch {
+	float:right;
+	display:flex;
+	align-items:center;
+	height:52px;
+	margin-right: 20px;
+}
+@media screen and (max-width:1024px) {
+	.headersearch {	
+		margin-right: 45px;
+	}
+}
+@media screen and (max-width:640px) {
+	.headersearch {	
+		margin-right:0;
+		clear:both;
+		width:100%;
+		display:flex;
+		justify-content:center;
+	}
+}
+
+/* .......................................................................... Search Box  .......................................................................... */
+form .search-box {
+	padding-right: 40px;
+	position: relative;
+	background:#fff;
+}
+form .search-box input[type="search"] {
+	width: 100%;
+	height:23px;
+	line-height:25px;
+	color:#a3a3a3;
+	border:none;
+}
+form .search-box input[type="submit"] {
+	position: absolute;
+	right: 0;
+	padding: 0;
+	height:25px;
+	width: 30px;
+	text-indent: -9999px;
+	background:url(images/search.png) 50% no-repeat;
+	top: 0;
+	border:none;
+	font-family:'FontAwesome';
+}
+.headersearch .search-box {
+}
+.headersearch .search-box input[type="search"] {	
+}
+.headersearch .search-box input[type="submit"] {
+}
+.search-box input[type="search"]::-webkit-input-placeholder { color:#a3a3a3; }
+.search-box input[type="search"]:-moz-placeholder { color:#a3a3a3; }
+.search-box input[type="search"]::-moz-placeholder { color:#a3a3a3; }
+.search-box input[type="search"]:-ms-input-placeholder { color:#a3a3a3;}
+
+
+/* .......................................................................... Navigation .......................................................................... */
+@media only screen and (min-width:1024px) {
+	#extra-menu {
+		float:right;
+		display:flex;
+		align-items:center;
+		height:52px;
+	}
+	#extra-menu ul.nav-menu > li > a {
+		text-decoration:none;
+		padding: 5px 17px;
+		display:block;
+		color:#fff;
+		font-size:20px;
+		font-family: 'ferrara-osfregular';
+		border-right:1px solid #555;
+	}
+	#extra-menu ul.nav-menu > li:hover > a {
+		color:#ed145b;
+	}
+	#extra-menu ul.nav-menu > li:last-child > a {
+		border-right:none;
+	}
+	.site-header ul.nav-menu  > li ul {
+		background:#000;
+		border-bottom:5px solid #fff;
+	}
+	.site-header ul.nav-menu  > li ul li a {
+		color:#fff;
+	}
+	.site-header ul.nav-menu  > li ul li:hover > a {
+		color:#ed145b;
+	}
+	
+}
+@media only screen and (min-width:1024px) {
+	#main-menu {
+		float:left;
+		width: 1000px;
+		display:flex;
+		align-items:center;
+		height:70px;
+		background:#fd005f;
+	}
+	#main-menu ul.nav-menu > li > a {
+		text-decoration:none;
+		padding:24px 20px;
+		font-size:20px;
+		color:#fff;
+		text-transform:uppercase;
+		font-family:'ferrara-osfregular';
+	}
+	#main-menu ul.nav-menu > li:hover > a {
+		color:#ec205f;
+		background:#000;
+	}
+	#main-menu ul.nav-menu  > li ul {
+		border-bottom:5px solid #ec205f;
+	}
+}
+
+@media only screen and (max-width:1023px) {
+	#mobile-menu-trigger a {}
+	#mobile-menu-trigger a:hover {}
+}
+
+/* .......................................................................... Slider .......................................................................... */
+.slider-container {}
+.slider-bgr { 
+	position:absolute; 
+	width:100%; 
+	height:100%; 
+	background:url(images/fp-back.png); 
+}
+.fp-slides {
+	z-index:1;
+}
+.fp-content-wrap {
+	width:1000px;
+}
+.fp-content {
+	padding:20px;
+	background: rgb(238 238 238 / 26%);
+	border-top: 1px solid #eee6;
+}
+.fp-title {
+	color:#fff;
+	font-weight:normal;
+	margin: 0;
+}
+.fp-description {
+	color:#fff;
+	margin: 0 0 10px;
+}
+.fp-more {
+	float:none;
+	padding:10px 25px;
+}
+.fp-more:hover {
+	
+}
+.fp-nav {
+	bottom: 0;
+	left: auto;
+	right: 10px;
+}
+.fp-pager a {
+	width:30px;
+	height: 30px;
+	background: url(images/slider-page.png) no-repeat;
+}
+.fp-pager a:hover, .fp-pager a.activeSlide  {
+	background: url(images/slider-page-active.png) no-repeat;
+}
+@media screen and (max-width:640px) {
+	.fp-content {
+		display:none;
+	}	
+	.fp-nav {
+		display:none;
+	} 	
+}
+
+
+/* ========================================= CONTENT. ========================================= */
+.site-content {
+	margin:0 auto;
+	padding: 35px 20px;
+	background: #000;
+	width:1000px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.page-title {
+	font-family: 'ferrara-osfregular', sans-serif;
+	color:#fff;
+	text-decoration:none;
+	font-size:28px;	
+	text-transform:uppercase;	
+}
+.entry-title {
+	margin:0;
+	padding-bottom:5px;
+	border:none;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-weight:normal;
+	font-family: 'ferrara-osfregular', sans-serif;
+	color:#fff;
+	text-decoration:none;
+	font-size:28px;	
+	text-transform:uppercase;
+}
+.entry-title a {
+	color:#fff;
+}
+.entry-title a:hover { color:#555;}
+article {
+    border: none;
+    padding-bottom: 25px;
+    margin: 0 0 25px;
+}
+article .featured_image {
+	float:left;
+	margin:0 15px 10px 0;
+	vertical-align:bottom;
+}
+@media screen and (max-width:640px) {
+	article .featured_image {	
+		clear:both;
+		margin:0 0 10px;
+		width:100%;
+	}
+}
+
+/* .......................................................................... Entry Meta .......................................................................... */
+.entry-meta {
+	color:#fff;
+	font-size:12px;
+	margin: 0 0 10px;
+}
+.entry-meta a {}
+.entry-meta a:hover {}
+.entry-meta > span {
+	margin: 0 10px 0 0;
+}
+.entry-meta .post-date {
+	color:#fff;
+}
+
+/* ....................... Sidebar .................... */
+.widget {
+	line-height:24px;
+}
+.widget a {
+	
+}
+.widget a:hover {
+	
+}
+.sidebar { 
+	color:#999; 
+}
+.sidebar .caption h4 {
+	font-size:28px;
+	color:#fff;
+	font-family: 'ferrara-osfregular';
+	text-transform:uppercase;
+	font-weight: normal;
+}
+.widget ul {
+	padding:0;
+}
+.widget ul li {
+	list-style-type: none;
+}
+.widget_recent_entries ul li a,
+.widget_archive ul li a,
+.widget_meta ul li a,
+.widget_nav_menu ul li a,
+.widget_pages ul li a,
+.widget_categories ul li a {
+	padding: 15px 0;
+	display:inline-block;
+}
+.widget_recent_entries a:hover,
+.widget_archive ul li a:hover,
+.widget_meta ul li a:hover,
+.widget_nav_menu ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_categories ul li a:hover {}
+.widget_smt_comments .comment_avatar img,
+.widget_smt_posts img {
+	float:left;
+	margin:0 10px 10px 0;
+}
+.widget_smt_comments .comment_author {
+	font-size:14px;
+}
+.widget_smt_comments a {
+	text-decoration:none;
+}
+.widget_smt_posts .post-date .day {display: block;font-size: 21px;}
+.widget_smt_posts .post-date {float: left;text-align: center;margin: 0 8px 10px 0;font-size: 12px;padding: 8px 0;}
+.widget_smt_posts .title {
+	display: block;
+	font-size:14px;
+}
+.widget_smt_posts p {
+	font-size:13px;
+}
+.widget_smt_posts ul li,
+.widget_smt_comments ul li,
+.widget_recent_comments ul li  { display:block;	padding:10px 0; }
+
+
+/* ========================================= FOOTER. ========================================= */
+footer .boxed-container {
+	color:#fff;
+	background:#ed145b;
+	box-sizing:border-box;
+	padding:0 20px;
+}
+footer .widget {
+	padding-top:25px;
+}
+footer .widget a, footer a {
+	color:#fff;	
+	text-decoration:underline;
+}
+footer .widget a:hover, footer a:hover {
+	color:#000;
+	text-decoration:none;	
+}
+footer .footer_txt {
+	padding:15px 0;
+	border-top:1px solid #ca0e3f;
+	text-align:center;
+}
+footer .footer_txt a {
+	color:#fff;
+	text-decoration:underline;
+}
+footer .widget .caption  h4 {
+	color:#000;
+	font-family: 'ferrara-osfregular';
+	font-size:25px;
+	text-transform:none;
+	font-weight: normal;
+}
+footer .widget_archive ul li a,
+footer .widget_meta ul li a,
+footer .widget_nav_menu ul li a,
+footer .widget_pages ul li a,
+footer .widget_categories ul li a {}
+footer .widget_archive ul li a:hover,
+footer .widget_meta ul li a:hover,
+footer .widget_nav_menu ul li a:hover,
+footer .widget_pages ul li a:hover,
+footer .widget_categories ul li a:hover {}
+footer .widget_smt_posts .post-date {
+	color:#000;
+}
